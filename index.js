@@ -23,7 +23,7 @@ const colors = [
 
 
   start.addEventListener('click', ev => {
-    intervalId = setInterval(() => randomColor(colors, randomIntegerFromInterval(0, 5)), 1000);
+    intervalId = setInterval(() => randomColor(colors, randomIntegerFromInterval(0, colors.length -1)), 1000);
     start.disabled = true;
     stop.disabled = false;
   });
